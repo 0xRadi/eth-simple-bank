@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bank Negara</title>
+</head>
+
+<body>
+  <h2>Bank Negara Decentralized Application</h2>
+
+  <div id="band"></div>
+  </br>
+  </br>
+
+  <div class="container">
+    <div>
+      <label><b>Create Account: &nbsp;&nbsp;</b></label>
+      <input type="text" id="name" placeholder=" Enter Name" required />
+      <button id="createAccount">Create </button>
+    </div>
+    <div>
+      <label><b>Deposit Balance: &nbsp;&nbsp;</b></label>
+      <input type="number" id="depositAmount" placeholder="Enter Amount Ether " required />
+      <button id="deposit">Deposit</button>
+    </div>
+    <div>
+      <label><b>Withdraw Amount: &nbsp;&nbsp;</b></label>
+      <input type="number" id="withdrawAmount" placeholder="Enter amount in Ether" required />
+      <button id="withdraw">Withdraw</button>
+    </div>
+    <div>
+      <label><b>Transfer Funds: &nbsp;&nbsp;</b></label>
+      <input type="text" id="toAddress" placeholder="Enter Address to transfer." required />
+      <input type="number" style="width:10%;" id="transferAmount" placeholder="Enter Amount in Ether." required />
+      <button id="directTransfer">Direct Transfer </button>
+    </div>
+
+    <div>
+      <button id="getAccountDetails">&nbsp;Get Account Summary&nbsp;</button>
+    </div>
+    </br>
+    <div id="response">
+      <p><b>Name: </b><span id="getName">??</span></p>
+      <p><b>Address: </b><span id="getAddress">??</span></p>
+      <p><b>Balance: </b><span id="getBalance">??</span></p>
+
+    </div>
+  </div>
+  <hr>
+  <div id="log"></div>
+  <link rel="stylesheet" href="index.css">
+  <script src="web3.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="index.js"></script>
+</body>
+<footer style="text-align: right;">
+</footer>
+
+</html>
