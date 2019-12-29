@@ -33,9 +33,8 @@ You must migrate the bankNegara smart contract each time your restart ganache.
 - Import an account provided by ganache.
 
 ## Step 6. Run the Front End Application
-`$ npm run dev`
-
-or you can simply run http server using python
+You can simply run http server using python
 
 `$ python3 -m http.server 3000`
+
 Visit this URL in your browser: http://localhost:3000
